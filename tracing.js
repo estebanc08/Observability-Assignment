@@ -12,7 +12,6 @@ const { registerInstrumentations } = require("@opentelemetry/instrumentation");
 const { JaegerExporter } = require('@opentelemetry/exporter-jaeger');
 
 module.exports = (serviceName) => {
-   // Create a Jaeger exporter with your desired configuration
    const exporter = new JaegerExporter({
       serviceName: serviceName,
    });
